@@ -14,32 +14,44 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodbDS"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodbDS",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodbDS",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodbDS",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodbDS",
     "public": false
   },
   "Message": {
     "dataSource": null
   },
   "Customer": {
-    "dataSource": "db",
+    "dataSource": "mongodbDS",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "mongodbDS",
+    "public": false
+  },
+  "EmailAddress": {
+    "dataSource": "mongodbDS",
+    "public": false
+  },
+  "Order": {
+    "dataSource": "mongodbDS",
     "public": true
   }
 }

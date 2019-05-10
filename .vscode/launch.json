@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "automigrate Launch Program",
+            "program": "${workspaceFolder}/bin/automigrate.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\server\\server.js"
         }
