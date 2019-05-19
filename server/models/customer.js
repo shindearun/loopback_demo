@@ -48,7 +48,7 @@ module.exports = function(Customer) {
       'accepts': [
         {
           arg: 'customerId',
-          type: 'string',
+          type: 'number',
           'http': {source: 'path'},
         },
       ],

@@ -42,11 +42,6 @@
         "validate": true,
         "forceId": false
       }
-    },
-    "orders": {
-      "type": "hasMany",
-      "model": "Order",
-      "foreignKey": ""
     }
   },
   "acls": [],
