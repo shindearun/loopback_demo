@@ -6,7 +6,7 @@ const app = require('../server/server');
 // const ds = app.datasources.mongodbDS;
 
 var ds = app.dataSources.mongodbDS;
-var lbTables = ['Customer', 'Order'];
+var lbTables = ['Customer', 'Order', 'counters'];
 ds.autoupdate(lbTables, function(er) {
   if (er) throw er;
   console.log('Loopback tables [' + lbTables + '] sync in ', ds.adapter.name);

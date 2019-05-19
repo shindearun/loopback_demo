@@ -17,6 +17,10 @@
     },
     "licenseNo": {
       "type": "string"
+    },
+    "customerId": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],

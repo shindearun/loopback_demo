@@ -53,5 +53,9 @@
   "Order": {
     "dataSource": "mongodbDS",
     "public": true
+  },
+  "counters": {
+    "dataSource": "mongodbDS",
+    "public": false
   }
 }
