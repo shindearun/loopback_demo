@@ -1,26 +1,22 @@
 {
-  "name": "Order",
+  "name": "Item",
+  "plural": "item",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "orderId": {
+    "itemId": {
       "type": "number",
       "required": true
     },
-    "customerId": {
-      "type": "number",
+    "name": {
+      "type": "string",
       "required": true
     },
-    "date": {
-      "type": "date",
-      "required": true
-    },
-    "amount": {
-      "type": "number",
-      "required": true
+    "description": {
+      "type": "string"
     }
   },
   "validations": [],

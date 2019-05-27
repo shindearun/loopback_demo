@@ -57,5 +57,13 @@
   "counters": {
     "dataSource": "mongodbDS",
     "public": false
+  },
+  "Item": {
+    "dataSource": "mongodbDS",
+    "public": true
+  },
+  "OrderItem": {
+    "dataSource": "mongodbDS",
+    "public": true
   }
 }

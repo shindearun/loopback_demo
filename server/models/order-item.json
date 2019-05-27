@@ -1,0 +1,55 @@
+{
+  "name": "OrderItem",
+  "plural": "OrderItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "itemId": {
+      "type": "number",
+      "required": true
+    },
+    "orderId": {
+      "type": "number",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "getItemsForOrder": {
+      "accepts": [
+        {
+          "arg": "orderId",
+          "type": "number",
+          "required": true,
+          "description": "OrderID",
+          "http": {
+            "source": "path"
+          }
+        }
+      ],
+      "returns": [
+        {
+          "arg": "items",
+          "type": "object",
+          "root": true,
+          "description": "all items for Orders"
+        }
+      ],
+      "description": "",
+      "http": [
+        {
+          "path": "/GetItems/:orderId",
+          "verb": "get"
+        }
+      ]
+    }
+  }
+}
