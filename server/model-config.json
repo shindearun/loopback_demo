@@ -36,7 +36,8 @@
     "public": false
   },
   "Message": {
-    "dataSource": null
+    "dataSource": "mongodbDS",
+    "public": true
   },
   "Customer": {
     "dataSource": "mongodbDS",

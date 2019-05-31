@@ -1,7 +1,15 @@
 {
   "name": "Message",
   "base": "Model",
-  "properties": {},
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    }
+  },
   "validations": [],
   "relations": {},
   "acls": [
