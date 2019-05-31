@@ -1,6 +1,6 @@
 {
   "name": "OrderItem",
-  "plural": "OrderItem",
+  "plural": "OrderItems",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
