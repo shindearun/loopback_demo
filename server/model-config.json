@@ -66,5 +66,9 @@
   "OrderItem": {
     "dataSource": "mongodbDS",
     "public": true
+  },
+  "Cat": {
+    "dataSource": "mongodbDS",
+    "public": true
   }
 }
