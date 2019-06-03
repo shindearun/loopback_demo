@@ -30,8 +30,8 @@ module.exports = function(Cat) {
     next();
   });
 
-  Cat.adoptable = function(id, cb) {
-    Cat.findById(id, function(err, cat) {
+  Cat.adoptable = function(catId, cb) {
+    Cat.findOne({'where': {'catId': catId}}, function(err, cat) {
       if (err) return cb('Error', null);
       if (!cat) return cb('Cat not found', null);
       let canAdopt = false;
@@ -41,7 +41,8 @@ module.exports = function(Cat) {
   };
 
   Cat.remoteMethod('adoptable', {
-    accepts: {arg: 'id', type: 'any'},
+    http: {verb: 'get', path: '/adoptable'},
+    accepts: {arg: 'catId', type: 'any'},
     returns: {arg: 'adoptable', type: 'boolean'},
   });
 
